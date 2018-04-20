@@ -15,11 +15,11 @@ import br.com.alura.gerenciador.model.Empresa;
 @WebServlet(urlPatterns ="/novaEmpresa")
 public class NovaEmpresa extends HttpServlet{
 	
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 8147512659241148541L;
 
 	@Override
-	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		//Teste
 		String nome = req.getParameter("nome");
 		
 		Empresa empresa = new Empresa(nome);
@@ -28,6 +28,6 @@ public class NovaEmpresa extends HttpServlet{
 		
 		PrintWriter writer = resp.getWriter();
 		
-		writer.println("<html><body> Empresa " + empresa.getNome() + "adiciona!</body></html>");
+		writer.println("<html><body> Empresa " + empresa.getNome() + " adiciona!</body></html>");
 	}
 }

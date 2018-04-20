@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import br.com.alura.gerenciador.dao.EmpresaDAO;
 import br.com.alura.gerenciador.model.Empresa;
 
-@WebServlet(urlPatterns = "buscaEmpresa")
+@WebServlet(urlPatterns = "/busca")
 public class BuscaEmpresa extends HttpServlet {
 
 	private static final long serialVersionUID = -5640846148829616329L;
@@ -24,6 +24,9 @@ public class BuscaEmpresa extends HttpServlet {
 		PrintWriter writer = resp.getWriter();
 
 		writer.println("<html>");
+		
+		writer.println("<head> <meta charset=\"ISO-8859-1\"> </head>");
+		
 		writer.println("<body>");
 		writer.println("Resultado da busca: <br>");
 

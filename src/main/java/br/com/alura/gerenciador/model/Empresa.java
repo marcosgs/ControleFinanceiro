@@ -2,7 +2,7 @@ package br.com.alura.gerenciador.model;
 
 public class Empresa {
 
-	private Long id = 0l;
+	private Long id = 0L;
 	private String nome;
 
 	public Empresa(String nome) {

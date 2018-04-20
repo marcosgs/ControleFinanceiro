@@ -1,17 +1,22 @@
+<!DOCTYPE html>
 <html>
+<head>
+<meta charset="ISO-8859-1">
+</head>
 <body>
 	Bem vindo ao nosso gerenciador de empresas!
 	<br />
-	<form action="novaEmpresa">
-		Nome: <input type="text" name="nome" /><br /> 
-		<input type="submit" value="Login" />
+	<form action="novaEmpresa" method="POST">
+		Nome: <input type="text" name="nome" /><br> <br> 
+		
+		<input type="submit" value="Enviar" />
 	</form>
-
+	<br><br>
 	<form action="login" method="post">
-		Email: <input type="text" name="email" /><br /> 
-		Senha: <input type="password" name="senha" /><br /> 
-		<input type="submit" value="Login" />
+		Email: <input type="email" name = "email" /> <br> <br>
+		Senha: <input type="password" name = "senha" /> <br><br>
+		
+		<input type="submit" value="Logar"/>
 	</form>
-
 </body>
 </html>

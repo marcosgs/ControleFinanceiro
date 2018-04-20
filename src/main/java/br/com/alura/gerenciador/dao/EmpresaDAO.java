@@ -17,7 +17,7 @@ public class EmpresaDAO {
 		geraIdEAdiciona(new Empresa("Alura"));
 		geraIdEAdiciona(new Empresa("Google"));
 		geraIdEAdiciona(new Empresa("Caelum"));
-		geraIdEAdiciona(new Empresa("Casa do CÃ³digo"));
+		geraIdEAdiciona(new Empresa("Casa do Código"));
 	}
 
 	public Collection<Empresa> buscaPorSimilaridade(String nome) {
