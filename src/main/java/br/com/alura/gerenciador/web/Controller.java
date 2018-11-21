@@ -26,7 +26,7 @@ public class Controller extends HttpServlet{
 		String nomeDaClasse= "br.com.alura.gerenciador.web." + tarefa;
 		
 		try {
-			Class type = Class.forName(nomeDaClasse);
+			Class<?> type = Class.forName(nomeDaClasse);
 			Tarefa instancia = (Tarefa) type.newInstance();
 			String pagina= instancia.executa(req,resp);
 			
